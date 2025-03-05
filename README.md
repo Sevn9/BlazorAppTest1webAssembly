@@ -1,0 +1,2 @@
+# BlazorAppTest1webAssembly
+ 
