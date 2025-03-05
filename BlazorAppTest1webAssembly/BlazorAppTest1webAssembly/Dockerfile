@@ -11,7 +11,7 @@ EXPOSE 8081
 
 
 # This stage is used to build the service project
-FROM mcr.microsoft.com/dotnet/aspnet:9.0-windowsservercore-ltsc2022 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0-windowsservercore-ltsc2022 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["BlazorAppTest1webAssembly/BlazorAppTest1webAssembly/BlazorAppTest1webAssembly.csproj", "BlazorAppTest1webAssembly/BlazorAppTest1webAssembly/"]
